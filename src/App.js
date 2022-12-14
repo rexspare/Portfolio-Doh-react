@@ -16,8 +16,8 @@ const App = () => {
   return (
     !loading && (
       <Router>
-        <div>
-          <Link to="/"> Home </Link>
+        <div className="flex align-center items-center justify-evenly mx-auto">
+          <Link className="text-xl" to="/"> Home </Link>
           <Link to="/Projects"> projects </Link>
           <Link to="/About"> about </Link>
         </div>

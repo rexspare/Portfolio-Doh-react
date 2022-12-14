@@ -1,8 +1,14 @@
+import RightNavbar from "../component/RightNavbar"
+import { motion } from 'framer-motion'
+
 const Home = () => {
   return (
-    <div>
-      <h1>THIS IS THE HOME PAGE</h1>
-    </div>
+    <motion.div 
+    initial={{ height: 0}} 
+    animate={{ height: "100%"}} 
+    exit={{ y: window.innerHeight}}>
+      <RightNavbar />
+    </motion.div>
   )
 }
 
