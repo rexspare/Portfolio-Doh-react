@@ -1,40 +1,70 @@
-import '../styles/linkHover.css'
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "../styles/linkHover.css";
 
-
-const LeftNavbar = () => {
+const ReftNavbar = () => {
+  const location = useLocation();
+  const pathname = location.pathname;
+  console.log(pathname, "pathname");
   return (
-    <div id="p" className="flex w-screen h-screen justify-end">
-      <div className="flex flex-col justify-center w-16 h-full overflow-hidden bg-off-white">
-        <div className="origin-center -rotate-90 my-auto mt-32">
+    <div
+      className={`flex flex-col gap-y-10 justify-between w-16 min-h-screen ${
+        pathname === "/Projects" ? "bg-[#1A1818] text-white " : "bg-off-white"
+      }`}
+    >
+      <div className="origin-center -rotate-90 flex flex-row gap-x-6 my-auto mt-52 ">
+      {pathname === "/" ? (
+        <>
+        <a
+          className="m-3 text-xxs tracking-widest"
+          href="https://github.com/Doh1024"
+        >
+          "GH"
+          <svg viewBox="0 0 70 36">
+            <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+          </svg>
+        </a>
 
-          <a className="m-3 text-xs tracking-widest" href="https://github.com/Doh1024">GH   
+        <a
+          className="m-3 text-xxs tracking-widest"
+          href="https://www.linkedin.com/in/dohyeong-kim-02a753250/"
+        >
+          "LI"
+          <svg viewBox="0 0 70 36">
+            <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+          </svg>
+        </a>
+
+        <Link
+          className="m-3 text-xxs tracking-widest"
+          to="/Contact"
+        >
+          "EM"
+          <svg viewBox="0 0 70 36">
+            <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+          </svg>
+        </Link>
+        </>
+      ) : (
+        <Link className="m-3 text-xs tracking-widest" to="/">
+            "Home"
             <svg viewBox="0 0 70 36">
               <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
             </svg>
-          </a>
-            
-          <a className="m-3 text-xs tracking-widest" href="https://github.com/Doh1024">LI
-            <svg viewBox="0 0 70 36">
-              <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
-            </svg>
-          </a>
-
-          <a className="m-3 text-xs tracking-widest" href="https://github.com/Doh1024">GH
-            <svg viewBox="0 0 70 36">
-              <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
-            </svg>
-          </a>
-
-        </div>
-        <div class="inline-flex justify-center w-full mb-72">
-          <div class="h-[150px] bg-black w-[1px]"></div>
-        </div>
-        <div className="tracking-widest origin-center -rotate-90 text-sm text-black my-auto mb-20">©2022</div>
+          </Link>
+        )}
       </div>
-
+      <div className="mb-60 ml-2 inline-flex justify-center w-full">
+        <div className={`h-[150px] bg-black w-[2px] ${
+            pathname === "/Projects" ? "bg-white" : "bg-black"
+          }`}></div>
+      </div>
+      <div className="tracking-widest origin-center -rotate-90 text-xxs my-auto mb-20">
+       "© 2022"
+      </div>
     </div>
-  )
-}
+  );
+};
 
-
-export default LeftNavbar
+export default ReftNavbar;

@@ -1,30 +1,35 @@
-import React,{useState} from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation} from "react-router-dom";
-import AnimatedRoutes from './component/AnimatedRoutes';
-
+import React, { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
+import AnimatedRoutes from "./component/AnimatedRoutes";
+import RightNavbar from "./component/RightNavbar";
 
 const App = () => {
-
   const [loading, setLoading] = useState(true);
-  const loader = document.getElementById('loader')
-  if(loader){
+  const loader = document.getElementById("loader");
+  if (loader) {
     setTimeout(() => {
-      loader.style.display = "none"
+      loader.style.display = "none";
       setLoading(false);
     }, 3000);
   }
   return (
     !loading && (
       <Router>
-        <div className="flex align-center items-center justify-evenly mx-auto">
-          <Link className="text-xl" to="/"> Home </Link>
-          <Link to="/Projects"> projects </Link>
-          <Link to="/About"> about </Link>
+        <div className="flex flex-row w-full h-full align-center items-start justify-between mx-0">
+          <AnimatedRoutes />
+          <div className="min-h-screen bg-red-300">
+            <RightNavbar />
+          </div>
         </div>
-        <AnimatedRoutes />
       </Router>
     )
   );
-}
+};
 
 export default App;
