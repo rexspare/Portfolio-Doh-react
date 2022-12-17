@@ -1,4 +1,4 @@
-import RightNavbar from "../component/RightNavbar";
+
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
