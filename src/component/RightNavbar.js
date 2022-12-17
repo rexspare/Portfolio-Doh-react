@@ -8,8 +8,9 @@ const ReftNavbar = () => {
   const pathname = location.pathname;
   console.log(pathname, "pathname");
   return (
+    //flex flex-col gap-y-10 justify-between w-16 min-h-screen 
     <div
-      className={`flex flex-col gap-y-10 justify-between w-16 min-h-screen ${
+      className={`flex flex-col gap-y-10 justify-between w-16 p-auto min-h-screen fixed top-0 right-0 h-full ${
         pathname === "/Projects" ? "bg-[#1A1818] text-white " : "bg-off-white"
       }`}
     >
@@ -55,7 +56,7 @@ const ReftNavbar = () => {
           </Link>
         )}
       </div>
-      <div className="mb-60 ml-2 inline-flex justify-center w-full">
+      <div className="mt-16 inline-flex justify-center w-full"> {/*mb-60 ml-2 inline-flex justify-center w-full*/}
         <div className={`h-[150px] bg-black w-[2px] ${
             pathname === "/Projects" ? "bg-white" : "bg-black"
           }`}></div>

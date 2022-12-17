@@ -30,7 +30,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <motion.div className='absolute bottom-0 right-0 pb-28 font-prata font-thin text-lxl'
+        <motion.div className='absolute bottom-0 -right-80 pb-28 font-prata font-thin text-lxl'
         initial={{ y: "100%"}}
         animate={{ y: 0 , transition: {delay: .6}}}
         >Hello.</motion.div>

@@ -8,7 +8,7 @@ const Contact = () => {
       animate={{ y: 0 , transition: {duration: 0.5} }}
       exit={{ y: window.innerHeight}}
      >
-      <section className="text-gray-700 body-font relative">
+      <section className="text-gray-700 body-font relative mx-auto">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-4xl font-open_sans font-semibold  title-font mb-4 text-gray-900">
