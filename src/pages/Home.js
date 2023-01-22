@@ -10,8 +10,8 @@ const Home = () => {
     >
       {/*flex flex-row gap-x-16 pl-36 h-[100vh]*/}
       {/*flex flex-col text-7xl xl:text-8xl 2xl:text-9xl gap-y-2 font-prata font-thin justify-center h-full*/}
-      <div className="flex items-center box-border p-16 2xl:p-28 justify-between w-full h-screen">
-        <div className="flex flex-col text-sevenxl 2xl:text-xxl font-prata font-thin justify-center h-full leading-small">
+      <div className="flex flex-col md:flex-row items-center box-border p-16 2xl:p-28 justify-center md:justify-between w-full h-screen">
+        <div className="flex flex-col mt-16 text-[2.5rem] sm:text-xlx lg:text-xxl font-prata font-thin justify-center h-full leading-small">
           <Link to="/Projects">
             <span className="font-thin hover:italic hover:translate-x-2 duration-500">
               PROJECTS
@@ -31,7 +31,7 @@ const Home = () => {
           </Link>
         </div>
         {/*flex flex-col gap-y-2 font-open_sans tracking-widest justify-end mb-52 mx-auto px-10 */}
-        <div className="flex flex-col gap-y-2 font-open_sans tracking-widest mt-72 mx-auto">
+        <div className="flex flex-col gap-y-2 font-open_sans tracking-widest text-[0.8rem] md:text-[1rem] mt-[2rem] md:mt-72 mx-auto">
           <p className="font-open_sans font-semibold uppercase tracking-widest">
             Dohyeong Kim
           </p>

@@ -20,7 +20,7 @@ const Contact = () => {
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <div className="flex flex-wrap -m-2">
-              <div className="p-2 w-1/2">
+              <div className="p-2 w-full md:w-1/2">
                 <div className="relative">
                   <label for="name" className="leading-7 text-sm text-gray-600">
                     Name
@@ -33,7 +33,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="p-2 w-1/2">
+              <div className="p-2 w-full md:w-1/2">
                 <div className="relative">
                   <label
                     for="email"
@@ -64,7 +64,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
               </div>
-              <div className="mx-auto">
+              <div className="mx-auto mt-2">
                 <a href="#_" className="relative px-6 py-3 font-bold text-black group">
                   <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
                   <span className="absolute inset-0 w-full h-full border-2 border-black"></span>
