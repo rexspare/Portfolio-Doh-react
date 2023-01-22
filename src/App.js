@@ -17,7 +17,7 @@ const App = () => {
   return (
     !loading && (
       <Router>
-        <div className="flex flex-row w-full h-full align-center items-start justify-between mx-0">
+        <div className="flex flex-row w-full min-h-screen align-center items-start justify-center mx-0">
           <AnimatedRoutes />
           <div className="min-h-screen bg-red-300">
             <RightNavbar />
