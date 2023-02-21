@@ -14,7 +14,7 @@ const Home = () => {
       exit={{ y: window.innerHeight}}
     >
       <div className="flex flex-col gap-y-2 md:mx-28 font-prata font-thin mb-28">
-        <a href="https://github.com/Doh1024/Maze-solver">
+        <a target="_blank" href="https://github.com/Doh1024/Maze-solver">
           <div className="flex flex-col">
             <span className="font-prata font-thin text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 hover:italic hover:translate-x-2 duration-500 text-gray-200">
               Maze Solver
@@ -24,7 +24,7 @@ const Home = () => {
             </p>
           </div>
         </a>
-        <a href="https://newtone.netlify.app/">
+        <a target="_blank" href="https://newtone.netlify.app/">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-500 text-gray-200">
               Newtone
@@ -34,7 +34,7 @@ const Home = () => {
             </p>
           </div>
         </a>
-        <a href="https://github.com/Doh1024/262-a3">
+        <a target="_blank" href="https://github.com/Doh1024/262-a3">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-500 text-gray-200">
               Vue Project
@@ -44,7 +44,7 @@ const Home = () => {
             </p>
           </div>
         </a>
-        <a href="https://github.com/Doh1024/262-group">
+        <a target="_blank" href="https://github.com/Doh1024/262-group">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-500 text-gray-200">
               Recipe Website
@@ -54,7 +54,7 @@ const Home = () => {
             </p>
           </div>
         </a>
-        <a href="https://github.com/Doh1024/sudoku-solver">
+        <a target="_blank" href="https://github.com/Doh1024/sudoku-solver">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-500 text-gray-200">
               Sudoku Solver
@@ -64,7 +64,7 @@ const Home = () => {
             </p>
           </div>
         </a>
-        <a href="https://github.com/darbecker12/cpnt260-final-project">
+        <a target="_blank" href="https://github.com/darbecker12/cpnt260-final-project">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-500 text-gray-200">
               DDR Shop
