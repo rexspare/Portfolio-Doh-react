@@ -24,6 +24,16 @@ const Home = () => {
             </p>
           </div>
         </a>
+        <a href="https://newtone.netlify.app/">
+          <div className="flex flex-col">
+            <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-500 text-gray-200">
+              Newtone School
+            </span>
+            <p className="font-open_sans md:-mt-4 text-[0.9rem]">
+              - A website for Newtone School
+            </p>
+          </div>
+        </a>
         <a href="https://github.com/Doh1024/262-a3">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-500 text-gray-200">
