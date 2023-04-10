@@ -13,19 +13,19 @@ const Home = () => {
       <div className="flex flex-col md:flex-row items-center box-border p-16 2xl:p-28 justify-center md:justify-between w-full h-screen">
         <div className="flex flex-col mt-16 text-[2.5rem] sm:text-xlx lg:text-xxl font-prata font-thin justify-center h-full leading-small">
           <Link to="/Projects">
-            <span className="font-thin hover:italic hover:translate-x-2 duration-500">
+            <span className="font-thin hover:italic hover:translate-x-2 duration-0">
               PROJECTS
             </span>
           </Link>
           <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"/>
           <Link to="/About">
-            <span className="font-thin hover:italic hover:translate-x-2 duration-500">
+            <span className="font-thin hover:italic hover:translate-x-2 duration-0">
               ABOUT
             </span>
           </Link>
           <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700"/>
           <Link to="/Contact">
-            <span className="font-thin hover:italic hover:translate-x-2 duration-500">
+            <span className="font-thin hover:italic hover:translate-x-2 duration-0">
               CONTACT
             </span>
           </Link>
