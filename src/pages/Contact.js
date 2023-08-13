@@ -1,11 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xdovkjge");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <p>Thanks for your email! I will get back to you as soon as possible.</p>;
   }
   return (
     <motion.div className='mx-auto my-auto font-open_sans font-semibold'
