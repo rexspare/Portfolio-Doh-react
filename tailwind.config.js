@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors:{
         'off-white': '#ECE7E1',
-      }
+      },
     },
     fontSize:{
       xxl: '12rem',

@@ -32,7 +32,7 @@ const Home = () => {
         </div>
         {/*flex flex-col gap-y-2 font-open_sans tracking-widest justify-end mb-52 mx-auto px-10 */}
         <div className="flex flex-col gap-y-2 font-open_sans tracking-widest text-[0.8rem] md:text-[1rem] mt-[2rem] md:mt-72 mx-auto">
-          <p className="font-open_sans font-semibold uppercase tracking-widest">
+          <p class="line" className="font-open_sans font-semibold uppercase tracking-widest ml-1">
             Dohyeong Kim
           </p>
           <p className="font-thin text-xs">

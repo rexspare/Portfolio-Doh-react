@@ -34,6 +34,16 @@ const Home = () => {
             </p>
           </div>
         </a>
+        <a target="_blank" rel="noreferrer" href="https://olivehair.ca/">
+          <div className="flex flex-col">
+            <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-0 text-gray-200">
+              Olive Hair
+            </span>
+            <p className="font-open_sans md:-mt-4 text-[0.9rem]">
+              - Website for client's Hair Salon
+            </p>
+          </div>
+        </a>
         <a target="_blank" rel="noreferrer" href="https://github.com/Doh1024/262-a3">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-0 text-gray-200">
