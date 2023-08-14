@@ -12,7 +12,7 @@ const App = () => {
     setTimeout(() => {
       loader.style.display = "none";
       setLoading(false);
-    }, 3000);
+    }, 1500);
   }
   return (
     !loading && (

@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -33,10 +34,22 @@ const Home = () => {
         {/*flex flex-col gap-y-2 font-open_sans tracking-widest justify-end mb-52 mx-auto px-10 */}
         <div className="flex flex-col gap-y-2 font-open_sans tracking-widest text-[0.8rem] md:text-[1rem] mt-[2rem] md:mt-72 mx-auto">
           <p class="line" className="font-open_sans font-semibold uppercase tracking-widest ml-1">
-            Dohyeong Kim
+            <div>
+              <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("Dohyeong Kim").pauseFor(2000).start()
+              }}
+            />
+            </div>
           </p>
           <p className="font-thin text-xs">
-            "Front-End Developer"
+            <div>
+              <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("\"Frontend Developer\"").pauseFor(2000).start()
+              }}
+            />
+            </div>
           </p>
         </div>
 

@@ -5,7 +5,7 @@ import { useForm } from '@formspree/react';
 const Contact = () => {
   const [state, handleSubmit] = useForm("xdovkjge");
   if (state.succeeded) {
-      return <p>Thanks for your email! I will get back to you as soon as possible.</p>;
+      return <p class="md:text-base flex item-center my-auto padding-10 justify-center mx-auto font-open_sans font-semibold leading-relaxed text-xs">Thanks for your email! I will get back to you as soon as possible.</p>;
   }
   return (
     <motion.div className='mx-auto my-auto font-open_sans font-semibold'
