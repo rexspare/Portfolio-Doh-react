@@ -21,7 +21,7 @@ const About = () => {
             <div className="lg:my-auto max-w-lg">
               <h1 className="text-3xl font-semibold uppercase">Dohyeong Kim</h1>
               <hr className="h-px w-32 bg-gray-200 border-0 dark:bg-gray-700"/>
-              <p className="font-thin mb-5">"Front-End Developer"</p>
+              <p className="font-thin mb-5 ">"Front-End Developer"</p>
               <p>I'm a Junior Front-End Developer located in Canada who has a big passion for animations, UI effects
               , Web designs and Web functionality.</p>
               <p className='pt-3'>I have experiences in multiple languages and frameworks such as Java, C, Js, Vue.js, Nuxt.js, and React.js.</p>
