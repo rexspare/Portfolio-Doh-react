@@ -1,11 +1,16 @@
 import { motion } from 'framer-motion'
+import { useContext } from "react"
+import { ThemeContext } from "../component/ThemeContext"
 
 const About = () => {
+  const {isDark} = useContext(ThemeContext);
+
   return (
     <motion.div 
       initial={{ y: "100%" }}
       animate={{ y: 0 , transition: {duration: 0.5} }}
       exit={{ y: window.innerHeight}}
+      className={isDark ? 'dark' : ''}
    >
       <div className="container justify-items-center h-screen p-3 grid grid-cols-1 lg:grid-cols-3">
           <div className="lg:max-h-96 ">
