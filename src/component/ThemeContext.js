@@ -15,9 +15,11 @@ export const ThemeProvider = ({ children }) => {
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add('dark');
+      document.body.style.backgroundColor = '#7E7E7E'
       window.localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      document.body.style.backgroundColor = '#EBE5DF'
       window.localStorage.setItem('theme', 'light');
     }
   }, [isDark]);

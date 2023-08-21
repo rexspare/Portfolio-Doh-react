@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-
+import Typewriter from "typewriter-effect";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
@@ -90,7 +90,13 @@ const Home = () => {
           "PROJECTS"
         </p>
         <p className="font-thin text-[.8rem] tracking-widest pt-3 leading-5">
-          A selected set of projects I've built with teams and alone. This is a mix of web developer project and pure computer science projects.
+          <div>
+            <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString("A selected set of projects I've built with teams and alone. This is a mix of web developer project and pure computer science projects.").changeDelay(1).start()
+            }}
+          />
+          </div>
         </p>
       </div>
 

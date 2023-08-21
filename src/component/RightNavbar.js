@@ -1,12 +1,16 @@
-
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../styles/linkHover.css";
+import { useContext } from "react"
+import { ThemeContext } from "../component/ThemeContext"
 
-const ReftNavbar = () => {
+
+const RightNavbar = () => {
   const location = useLocation();
   const pathname = location.pathname;
-  console.log(pathname, "pathname");
+  const { isDark } = useContext(ThemeContext);
+  console.log(isDark);
+
   return (
     //flex flex-col gap-y-10 justify-between w-16 min-h-screen 
     <div
@@ -26,7 +30,7 @@ const ReftNavbar = () => {
             <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
           </svg>
         </a>
-
+        
         <a
           className="m-3 text-xxs tracking-widest"
           href="https://www.linkedin.com/in/dohyeong-kim-02a753250/"
@@ -68,4 +72,4 @@ const ReftNavbar = () => {
   );
 };
 
-export default ReftNavbar;
+export default RightNavbar;
