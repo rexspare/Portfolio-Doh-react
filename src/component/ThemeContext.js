@@ -15,11 +15,13 @@ export const ThemeProvider = ({ children }) => {
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add('dark');
-      document.body.style.backgroundColor = '#7E7E7E'
+      document.body.style.backgroundColor = '#2E2828';
+      document.documentElement.classList.add('dark-mode');
       window.localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
-      document.body.style.backgroundColor = '#EBE5DF'
+      document.body.style.backgroundColor = '#EBE5DF';
+      document.documentElement.classList.remove('dark-mode');
       window.localStorage.setItem('theme', 'light');
     }
   }, [isDark]);

@@ -4,6 +4,11 @@
   --line-active: #000000;
 }
 
+.dark-mode {
+  --line: #FFFFFF;  /* Change SVG line color in dark mode */
+  --line-active: #FFFFFF;  /* Change SVG line color on hover in dark mode */
+}
+
 a {
   display: inline-block;
   position: relative;

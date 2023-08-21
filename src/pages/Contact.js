@@ -1,8 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useForm } from '@formspree/react';
+import { useContext } from "react"
+import { ThemeContext } from "../component/ThemeContext"
 
 const Contact = () => {
+  const {isDark} = useContext(ThemeContext);
   const [state, handleSubmit] = useForm("xdovkjge");
   if (state.succeeded) {
       return <p class="md:text-base flex item-center my-auto padding-10 justify-center mx-auto font-open_sans font-semibold leading-relaxed text-xs">Thanks for your email! I will get back to you as soon as possible.</p>;
@@ -14,10 +17,10 @@ const Contact = () => {
       exit={{ y: window.innerHeight}}
      >
       <form onSubmit={handleSubmit}>
-        <section className="text-gray-700 body-font relative mx-auto">
+        <section className="text-gray-700 dark:text-dark-text body-font relative mx-auto">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-              <h1 className="sm:text-3xl text-4xl font-open_sans font-semibold  title-font mb-4 text-gray-900">
+              <h1 className="sm:text-3xl text-4xl font-open_sans font-semibold  title-font mb-4 text-gray-900 dark:text-dark-text">
                 Contact Me
               </h1>
               <p className="lg:w-2/3 mx-auto font-open_sans font-semibold leading-relaxed text-base">
@@ -28,7 +31,7 @@ const Contact = () => {
               <div className="flex flex-wrap -m-2">
                 <div className="p-2 w-full md:w-1/2">
                   <div className="relative">
-                    <label for="name" htmlFor="name" className="leading-7 text-sm text-gray-600">
+                    <label for="name" htmlFor="name" className="leading-7 text-sm dark:text-dark-text text-gray-600">
                       Name
                     </label>
                     <input
@@ -44,7 +47,7 @@ const Contact = () => {
                     <label
                       for="email"
                       htmlFor='email'
-                      className="leading-7 text-sm text-gray-600"
+                      className="leading-7 text-sm dark:text-dark-text text-gray-600"
                     >
                       Email
                     </label>
@@ -60,7 +63,7 @@ const Contact = () => {
                   <div className="relative">
                     <label
                       for="message"
-                      className="leading-7 text-sm text-gray-600"
+                      className="leading-7 text-sm dark:text-dark-text text-gray-600"
                     >
                       Message
                     </label>

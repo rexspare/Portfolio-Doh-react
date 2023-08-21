@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       colors:{
         'off-white': '#EBE5DF',
-        'dark-bg' : '#7E7E7E'
+        'dark-bg' : '#2E2828',
+        'dark-text': '#FEF4F4'
       },
     },
     fontSize:{
