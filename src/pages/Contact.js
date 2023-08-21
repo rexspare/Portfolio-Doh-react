@@ -1,17 +1,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useForm } from '@formspree/react';
-import { useContext } from "react"
-import { ThemeContext } from "../component/ThemeContext"
 
 const Contact = () => {
-  const {isDark} = useContext(ThemeContext);
   const [state, handleSubmit] = useForm("xdovkjge");
   if (state.succeeded) {
       return <p class="md:text-base flex item-center my-auto padding-10 justify-center mx-auto font-open_sans font-semibold leading-relaxed text-xs">Thanks for your email! I will get back to you as soon as possible.</p>;
   }
   return (
-    <motion.div className='mx-auto my-auto font-open_sans font-semibold'
+    <motion.div className='mx-auto my-auto font-open_sans font-semibold' 
       initial={{ y: "100%" }}
       animate={{ y: 0 , transition: {duration: 0.5} }}
       exit={{ y: window.innerHeight}}

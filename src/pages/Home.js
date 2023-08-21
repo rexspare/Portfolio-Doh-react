@@ -62,7 +62,7 @@ const Home = () => {
           
           <div>
             <button className="mt-16 mx-auto mb-5 absolute bottom-0 left-1/2 transform -translate-x-1/2 md:mb-5" onClick={() => setIsDark(!isDark)}>
-              {isDark ? <i className="fa fa-moon-o fa-2x" aria-hidden="true"></i> : <i className="fa fa-sun-o fa-2x" aria-hidden="true"></i>}
+              {isDark ? <i className="fa fa-moon-o fa-2x" aria-hidden="true" style={{color:'#FEF4F4'}}></i> : <i className="fa fa-sun-o fa-2x" aria-hidden="true"></i>}
             </button>
           </div>
       </div>
