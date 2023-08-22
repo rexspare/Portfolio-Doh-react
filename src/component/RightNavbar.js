@@ -22,7 +22,7 @@ const RightNavbar = () => {
       {pathname === "/" ? (
         <>
         <a
-          className="m-3 text-xxs dark:text-dark-text tracking-widest"
+          className="m-3 text-xxs text-black dark:text-dark-text tracking-widest"
           href="https://github.com/Doh1024"
         >
           "GH"
@@ -32,7 +32,7 @@ const RightNavbar = () => {
         </a>
         
         <a
-          className="m-3 text-xxs dark:text-dark-text tracking-widest"
+          className="m-3 text-xxs text-black dark:text-dark-text tracking-widest"
           href="https://www.linkedin.com/in/dohyeong-kim-02a753250/"
         >
           "LI"
@@ -42,7 +42,7 @@ const RightNavbar = () => {
         </a>
 
         <Link
-          className="m-3 text-xxs dark:text-dark-text tracking-widest"
+          className="m-3 text-xxs text-black dark:text-dark-text tracking-widest"
           to="/Contact"
         >
           "EM"
@@ -65,7 +65,7 @@ const RightNavbar = () => {
             pathname === "/Projects" ? "bg-white" : "bg-black"
           }`}></div>
       </div>
-      <div className="tracking-widest origin-center dark:text-dark-text -rotate-90 text-xxs my-auto mb-20">
+      <div className="tracking-widest text-black origin-center dark:text-dark-text -rotate-90 text-xxs my-auto mb-20">
        "© 2022"
       </div>
     </div>

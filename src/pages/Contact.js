@@ -1,11 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useForm } from '@formspree/react';
+import '../styles/contact.css'
+
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xdovkjge");
   if (state.succeeded) {
-      return <p class="md:text-base flex item-center my-auto padding-10 justify-center mx-auto font-open_sans font-semibold leading-relaxed text-xs">Thanks for your email! I will get back to you as soon as possible.</p>;
+      return <p class="md:text-base flex item-center text-black my-auto padding-10 justify-center mx-auto font-open_sans font-semibold leading-relaxed dark:dark-text text-xs">Thanks for your email! I will get back to you as soon as possible.</p>;
   }
   return (
     <motion.div className='mx-auto my-auto font-open_sans font-semibold' 
@@ -13,7 +15,28 @@ const Contact = () => {
       animate={{ y: 0 , transition: {duration: 0.5} }}
       exit={{ y: window.innerHeight}}
      >
-      <form onSubmit={handleSubmit}>
+        <header className='dark: text-dark-text font-prata'>Contact me!</header>
+
+        <form onSubmit={handleSubmit} id="form" class="topBefore">
+          <input  id="name" name='name' type="text" placeholder='NAME'/>
+          <input id="email" name='email' type="text" placeholder='E-MAIL'/>
+          <textarea id="message" name='message' type="text" placeholder='MESSAGE'></textarea>
+          <button class="button" disabled={state.submitting} id="submit" type="submit"> GO!</button>
+        </form>
+
+        <div className="p-2 w-3/4 ml-7 sm:ml-0 sm:w-full pt-8 mt-8 border-t border-black dark:border-gray-200 text-center">
+          <p className='font-open_sans dark:text-dark-text font-semibold'>dohyeongkim001024@gmail.com</p>
+        </div>    
+    </motion.div>
+  )
+}
+
+
+export default Contact
+
+
+/* 
+<form onSubmit={handleSubmit}>
         <section className="text-gray-700 dark:text-dark-text body-font relative mx-auto">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
@@ -86,9 +109,4 @@ const Contact = () => {
           </div>
         </section>
       </form>
-    </motion.div>
-  )
-}
-
-
-export default Contact
+*/
