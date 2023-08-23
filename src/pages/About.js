@@ -1,9 +1,25 @@
-import { motion } from 'framer-motion'
-import { useContext } from "react"
+import { motion, useAnimation } from 'framer-motion'
+import { useContext, useState, useEffect } from "react"
 import { ThemeContext } from "../component/ThemeContext"
 
 const About = () => {
   const {isDark} = useContext(ThemeContext);
+  const controls = useAnimation();
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+      if (scrollY > 50) {
+        controls.start({ opacity: 0, y: -100 });
+      } else {
+        controls.start({ opacity: 1, y: 0 });
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [controls, scrollY]);
 
   return (
     <motion.div 
@@ -23,18 +39,18 @@ const About = () => {
         {/* <div className="grid grid-cols-1 lg:grid-cols-2 max-h-screen gap-20">
         </div> */}
         <div className="flex justify-center items-center text-black dark:text-dark-text bg-off-white dark:bg-dark-bg pr-12 md:pr-0">
-            <div className="lg:my-auto max-w-lg">
-              <h1 className="text-3xl font-semibold uppercase">Dohyeong Kim</h1>
-              <hr className="h-px w-32 bg-black border-0 dark:dark-text"/>
-              <p className="font-thin mb-5 ">"Front-End Developer"</p>
-              <p>I'm a Junior Front-End Developer located in Canada who has a big passion for animations, UI effects
-              , Web designs and Web functionality.</p>
-              <p className='pt-3'>I have experiences in multiple languages and frameworks such as Java, C, Js, Vue.js, Nuxt.js, and React.js.</p>
-              <p className='pt-3'>Curiosity is one of my main motivator with creativity as my triumph. I'm a well organised person, problem solver,
-                and a independent employee with high attention to detail. I'm a huge fan of NBA, gaming, movies and music.
-              </p>
-            </div>
+          <div className="lg:my-auto max-w-lg">
+            <h1 className="text-3xl font-semibold uppercase">Dohyeong Kim</h1>
+            <hr className="h-px w-32 bg-black border-0 dark:bg-dark-text"/>
+            <p className="font-thin mb-5 ">"Front-End Developer"</p>
+            <p>I'm a Junior Front-End Developer located in Canada who has a big passion for animations, UI effects
+            , Web designs and Web functionality.</p>
+            <p className='pt-3'>I have experiences in multiple languages and frameworks such as Java, C, Js, Vue.js, Nuxt.js, and React.js.</p>
+            <p className='pt-3'>Curiosity is one of my main motivator with creativity as my triumph. I'm a well organised person, problem solver,
+              and a independent employee with high attention to detail. I'm a huge fan of NBA, gaming, movies and music.
+            </p>
           </div>
+        </div>
         {/* <motion.div className='absolute bottom-0 -right-30 pb-28 font-prata font-thin text-lxl'
         initial={{ y: "100%"}}
         animate={{ y: 0 , transition: {delay: .6}}}

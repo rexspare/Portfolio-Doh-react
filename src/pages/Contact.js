@@ -15,7 +15,7 @@ const Contact = () => {
       animate={{ y: 0 , transition: {duration: 0.5} }}
       exit={{ y: window.innerHeight}}
      >
-        <header className='dark: text-dark-text font-prata'>Contact me!</header>
+        <header className='text-black dark:text-dark-text font-prata'>Contact me!</header>
 
         <form onSubmit={handleSubmit} id="form" class="topBefore">
           <input  id="name" name='name' type="text" placeholder='NAME'/>
