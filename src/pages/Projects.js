@@ -34,7 +34,7 @@ const Home = () => {
             </p>
           </div>
         </a>
-        <a target="_blank" rel="noreferrer" href="https://olivehair.ca/">
+        <a target="_blank" rel="noreferrer" href="https://github.com/Doh1024/Spotify_Com">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-0 text-gray-200">
               Spotify Website
