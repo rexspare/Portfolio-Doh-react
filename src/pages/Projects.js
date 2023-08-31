@@ -37,6 +37,16 @@ const Home = () => {
         <a target="_blank" rel="noreferrer" href="https://olivehair.ca/">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-0 text-gray-200">
+              Spotify Website
+            </span>
+            <p className="font-open_sans md:-mt-4 text-[0.9rem]">
+              - Website for looking at your spotify stats using spotify API. Work in progress
+            </p>
+          </div>
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://olivehair.ca/">
+          <div className="flex flex-col">
+            <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-0 text-gray-200">
               Olive Hair
             </span>
             <p className="font-open_sans md:-mt-4 text-[0.9rem]">
@@ -50,7 +60,7 @@ const Home = () => {
               Vue Project
             </span>
             <p className="font-open_sans md:-mt-4 text-[0.9rem]">
-              - Building components and pages using vue
+              - Building basic components and pages using vue
             </p>
           </div>
         </a>
@@ -60,7 +70,7 @@ const Home = () => {
               Recipe Website
             </span>
             <p className="font-open_sans md:-mt-4 text-[0.9rem]">
-              - A recipe website made using Nuxt
+              - A basic recipe website using a cookbook API with nuxt
             </p>
           </div>
         </a>
@@ -87,15 +97,15 @@ const Home = () => {
       </div>
       <div className="font-open_sans tracking-widest md:w-[52%] lg:w-4/12 !mx-auto pr-10 lg:mr-16 mt-28 mb-20 lg:my-0">
         <p className="font-open_sans font-semibold uppercase tracking-widest">
-          "PROJECTS"
-        </p>
-        <p className="font-thin text-[.8rem] tracking-widest pt-3 leading-5">
-          <div>
-            <Typewriter
+          <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString("A selected set of projects I've built with teams and alone. This is a mix of web developer project and pure computer science projects.").changeDelay(1).start()
+              typewriter.typeString("\"Projects\"").pauseFor(2000).start()
             }}
           />
+        </p>
+        <p className="font-thin text-[.8rem] tracking-widest md:mb-20 pt-3 leading-5">
+          <div>
+              A selected set of projects I've built with teams and alone. This is a mix of web developer project and pure computer science projects.
           </div>
         </p>
       </div>
