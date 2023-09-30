@@ -19,7 +19,8 @@ module.exports = {
       xlx: '6.0rem',
       sevenxl: '3rem',
       med: '4rem',
-      big: '9rem'
+      big: '9rem',
+      fivexl: '2rem'
     },
     lineHeight: {
       'small': '1.15'

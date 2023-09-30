@@ -66,7 +66,7 @@ const RightNavbar = () => {
           }`}></div>
       </div>
       <div className="tracking-widest text-black origin-center dark:text-dark-text -rotate-90 text-xxs my-auto mb-20">
-       "© 2022"
+       "©/2023"
       </div>
     </div>
   );

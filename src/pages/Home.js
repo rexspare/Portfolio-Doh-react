@@ -24,13 +24,11 @@ const Home = () => {
               PROJECTS
             </span>
           </Link>
-          <hr class="h-px bg-gray-700 border-0 dark:bg-dark-text"/>
           <Link to="/About">
             <span className="font-thin text-black hover:italic hover:translate-x-2 duration-0 dark:text-dark-text">
               ABOUT
             </span>
           </Link>
-          <hr class="h-px bg-gray-700 border-0 dark:bg-dark-text"/>
           <Link to="/Contact">
             <span className="font-thin text-black hover:italic hover:translate-x-2 duration-0 dark:text-dark-text">
               CONTACT
@@ -53,7 +51,7 @@ const Home = () => {
               <div>
                 <Typewriter
                 onInit={(typewriter) => {
-                  typewriter.typeString("\"Frontend Developer\"").pauseFor(2000).start()
+                  typewriter.typeString("\"Front-End Developer\"").pauseFor(2000).start()
                 }}
               />
               </div>
