@@ -15,8 +15,8 @@ const About = () => {
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-black'/>
-          <div className='w-1 sm:h-80 h-40 bg-gradient-to-b from-black'/>
+          <div className='w-5 h-5 rounded-full bg-black dark:bg-[#B06969]'/>
+          <div className='w-1 sm:h-80 h-40 bg-gradient-to-b from-black dark:from-[#B06969]'/>
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-black dark:text-[#EDDEDE]`}>Hi, I'm <span className='text-[#D97B08] dark:text-[#B06969]'>Doh,</span></h1>
