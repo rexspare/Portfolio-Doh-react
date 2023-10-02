@@ -24,6 +24,8 @@ const RightNavbar = () => {
         <a
           className="m-3 text-xxs text-black dark:text-dark-text tracking-widest"
           href="https://github.com/Doh1024"
+          target="_blank"
+          rel="noreferrer"
         >
           "GH"
           <svg viewBox="0 0 70 36">
@@ -34,6 +36,8 @@ const RightNavbar = () => {
         <a
           className="m-3 text-xxs text-black dark:text-dark-text tracking-widest"
           href="https://www.linkedin.com/in/dohyeong-kim-02a753250/"
+          target="_blank"
+          rel="noreferrer"
         >
           "LI"
           <svg viewBox="0 0 70 36">

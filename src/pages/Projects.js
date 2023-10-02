@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { useLocation } from "react-router-dom";
 
+
 const Home = () => {
   const pathname = useLocation().pathname;
   console.log(pathname);
