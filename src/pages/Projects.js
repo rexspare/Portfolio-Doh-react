@@ -38,10 +38,10 @@ const Home = () => {
         <a target="_blank" rel="noreferrer" href="https://github.com/Doh1024/Spotify_Com">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-0 text-gray-200">
-              Spotify Website
+              FullStack Social Media App
             </span>
             <p className="font-open_sans md:-mt-4 text-[0.9rem]">
-              - Website for looking at your spotify stats using spotify API. Work in progress
+              - Fully functional fullstack social media application
             </p>
           </div>
         </a>
