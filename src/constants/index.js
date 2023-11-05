@@ -5,13 +5,13 @@ import {
   ecg,
   redux, 
   vue,
-  mongodb,
   docker,
   meta,
   starbucks,
   tesla,
   shopify,*/
   css,
+  mongodb,
   reactjs,
   tailwind,
   nodejs,
@@ -32,6 +32,10 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "MongoDb",
+    icon: mongodb,
   },
   {
     name: "React JS",
