@@ -15,16 +15,7 @@ const Home = () => {
       exit={{ y: window.innerHeight}}
     >
       <div className="flex flex-col gap-y-2 md:mx-28 font-prata font-thin mb-28">
-        <a target="_blank" rel="noreferrer" href="https://github.com/Doh1024/Maze-solver">
-          <div className="flex flex-col">
-            <span className="font-prata font-thin text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 hover:italic hover:translate-x-2 duration-0 text-gray-200">
-              Maze Solver
-            </span>
-            <p className="font-open_sans md:-mt-4 text-[0.9rem]">
-              - Maze Solver using backtracking algorithm in java
-            </p>
-          </div>
-        </a>
+        
         <a target="_blank" rel="noreferrer" href="https://newtone.netlify.app/">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-0 text-gray-200">
@@ -55,13 +46,23 @@ const Home = () => {
             </p>
           </div>
         </a>
-        <a target="_blank" rel="noreferrer" href="https://github.com/Doh1024/262-a3">
+        <a target="_blank" rel="noreferrer" href="https://github.com/Doh1024/gym_app">
           <div className="flex flex-col">
             <span className="text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 font-prata font-thin hover:italic hover:translate-x-2 duration-0 text-gray-200">
-              Vue Project
+              Fitness Website
             </span>
             <p className="font-open_sans md:-mt-4 text-[0.9rem]">
-              - Building basic components and pages using vue
+              - Fitness website built usingn ExerciseDB API
+            </p>
+          </div>
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://github.com/Doh1024/Maze-solver">
+          <div className="flex flex-col">
+            <span className="font-prata font-thin text-[2.2rem] md:text-[4rem] lg:text-xlx mb-0 p-0 hover:italic hover:translate-x-2 duration-0 text-gray-200">
+              Maze Solver
+            </span>
+            <p className="font-open_sans md:-mt-4 text-[0.9rem]">
+              - Maze Solver using backtracking algorithm in java
             </p>
           </div>
         </a>
